@@ -1,0 +1,37 @@
+<pre id="preview"></pre>
+
+<script src="/static/jquery.js"></script>
+<script>
+var crossDomain = '//crossdomain.com'
+function useNoCors() {
+	var img = new Image()
+	img.src = crossDomain + '/no-cors-request'
+}
+
+function useCors() {
+	$.ajax({
+		url: crossDomain + '/cors-request',
+		xhrFields: {
+			withCredentials: true
+		}
+	}).then(x => {
+		console.log(x)
+	})
+}
+
+function getCookie() {
+	$.ajax({
+		url: crossDomain + '/cookie',
+		xhrFields: {
+			withCredentials: true
+		}
+	}).then(x => {
+		document.getElementById('preview').innerHTML = JSON.stringify(x, 0, 4)
+	})
+}
+
+useNoCors()
+useCors()
+
+setTimeout(getCookie, 1000)
+</script>
