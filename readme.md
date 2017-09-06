@@ -14,6 +14,6 @@ add Host
 
 1. open <http://myhost.com/static/>
 1. wait for 1 second
-1. page will show json which set cookie success
+1. page will show json which cookie is setting success
 1. if show empty json
 	1. it means set cookie fail
