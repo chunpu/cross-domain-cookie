@@ -2,7 +2,7 @@
 
 Conclusion: 
 
-Safari will fuck crossdomain cookie if you never request the website, even with credentials request and response
+Safari will fuck crossdomain cookie if you never request the website, even with `credentials` request and response
 
 ## Usage
 
