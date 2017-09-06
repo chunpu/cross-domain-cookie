@@ -17,3 +17,5 @@ add Host
 1. page will show json which cookie is setting success
 1. if show empty json
 	1. it means set cookie fail
+
+[Webkit Intelligent Tracking Prevention](https://webkit.org/blog/7675/intelligent-tracking-prevention/)
